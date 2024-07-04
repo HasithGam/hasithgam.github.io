@@ -1,0 +1,186 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #ffffff;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f1f1f1;
+}
+.full-grid-container {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+  color: #d2cfcf;
+  
+}
+.left-main-column {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    margin-right: 65px;
+}
+.right-main-column {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    margin-right: 65px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    color: #000;
+}
+.page-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    margin-left: 20px;
+    margin-right: 65px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #333;
+    text-align: center;
+    border-radius: 15px;
+}
+.external-web-connect{
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+@media (min-width: 800px) and (max-width: 1280px) {
+  .full-grid-container {
+    grid-template-columns: 1fr 3fr;
+    gap: 1px;
+  }
+  .left-main-column {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    /* padding-left: 50px; */
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-right: 0px
+  }
+  .right-main-column {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-right: 80px;
+    margin-top: 50px;
+}
+  .page-footer{
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+@media (min-width: 1280px) {
+  .full-grid-container {
+    grid-template-columns: 1fr 3fr;
+    gap: 1px;
+  }
+  .left-main-column {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-right: 0px
+  }
+  .right-main-column {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-right: 200px;
+    margin-top: 50px;
+  }
+  .page-footer{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+.left-section-info{
+  text-align: left;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+.left-profile-header{
+    margin: auto;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.section-head{
+    font-size: 20px;
+    background: #646363;
+    border-radius: 15px;
+    padding: 12px;
+}
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    background-image: url("/Module2/Lab2.4/images/Hasith_Gamage_Image.jpeg");
+    background-size: contain;
+    
+}
+.profile-pic:hover{
+    border: 5px solid #f2f2f2;
+    box-shadow: 0 4px 8px 0 #696969, 0 6px 20px 0 #585858;
+}
+.myveb:link, .myveb:visited {
+  background-color: #333;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.myveb:hover, .myveb:active {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  width: 100px;
+}
+
+.position-sticky{
+    position: -webkit-sticky;
+    position: fixed; top: 0; right: 0; border: 0;
+    padding: 5px;
+    margin-top: 60px;
+}
+.social-media-default:link, .social-media-default:visited{
+    background-color: #333;
+    width: 22px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 15px;
+    margin: 1px auto;
+    font-size: 10px;
+
+}
+.social-facebook:hover, .social-facebook:active {
+    background-color: #1877F2;
+    color: #ffffff;
+    width: 20px;
+}
+.social-linkedin:hover, .social-linkedin:active {
+    background-color: #0077B5;
+    color: #ffffff;
+    width: 20px;
+}
+.social-instagram:hover, .social-instagram:active {
+    background-color: #c32aa3;
+}
+.social-twitter:hover, .social-twitter:active {
+    background-color: #1da1f2;
+}
+.social-tiktok:hover, .social-tiktok:active {
+    background-color: #010101;
+}
+
